@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Summary extends Component {
+class SummaryItem extends Component {
 	render() {
 		const summary = Object.keys(this.props.selected).map(key => (
 			<div className='summary__option' key={key}>
@@ -23,8 +23,7 @@ class Summary extends Component {
 		);
 
 		return (
-			<section className='main__summary'>
-				<h3>NEW GREENLEAF 2018</h3>
+			<>
 				{summary}
 				<div className='summary__total'>
 					<div className='summary__total__label'>Your Price: </div>
@@ -35,9 +34,9 @@ class Summary extends Component {
 						}).format(total)}
 					</div>
 				</div>
-			</section>
+			</>
 		);
 	}
 }
 
-export default Summary;
+export default SummaryItem;

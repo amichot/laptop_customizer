@@ -2,8 +2,8 @@
 import React, { Component } from "react";
 
 //components
-import MainForm from "./MainForm";
-import Summary from "./Summary";
+import MainForm from "./Main/MainForm";
+import Summary from "./Summary/Summary";
 
 //css
 import "./App.css";
